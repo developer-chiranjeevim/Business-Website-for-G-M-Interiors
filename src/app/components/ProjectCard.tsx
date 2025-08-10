@@ -30,7 +30,7 @@ const ProjectCard : React.FC = () => {
             <div className="w-full px-[1rem] py-[0.5rem]">
                 <div className="flex items-center justify-between my-[1rem]">
                     <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
-                        <h1 className="capitalize text-[0.75rem] text-gray-800">Portfolio</h1>
+                        <h1 className="capitalize text-[0.75rem] text-gray-800">Resedential</h1>
                     </div>
                     <div className="">
                         <p className="capitalize">Manhattan, NY</p>

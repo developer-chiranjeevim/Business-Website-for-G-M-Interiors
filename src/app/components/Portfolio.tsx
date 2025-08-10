@@ -15,7 +15,7 @@ const Portfolio : React.FC = () => {
                             <h1 className="capitalize text-[0.75rem] text-gray-800">Portfolio</h1>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-5xl leading-[4rem] font-semibold">Our Latest Projects</h1>
+                            <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Latest Projects</h1>
                             <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">Explore our portfolio of stunning interior design projects that showcase our <br></br>expertise across residential, commercial, and hospitality spaces.</p>
                         </div>
                         <div className="my-[2rem]">

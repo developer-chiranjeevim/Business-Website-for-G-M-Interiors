@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Services from "./components/Services";
 
 function Home(){
 
@@ -12,6 +13,7 @@ function Home(){
       <Banner />
       <About />
       <Portfolio />
+      <Services />
     </>
   )
 };

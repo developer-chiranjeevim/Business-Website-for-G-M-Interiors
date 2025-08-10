@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
 
 function Home(){
 
@@ -6,6 +7,7 @@ function Home(){
   return(
     <>
       <Navbar />
+      <Banner />
     </>
   )
 };

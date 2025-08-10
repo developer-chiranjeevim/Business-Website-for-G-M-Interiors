@@ -8,9 +8,9 @@ const Banner : React.FC = () => {
     return(
         <>
             <div className="flex justify-center">
-                <div className="grid grid-cols-2 w-full max-w-[1440px] py-[2rem]">
+                <div className="grid grid-cols-2 w-full max-w-[1440px] py-[2rem] px-[1rem] ">
                     {/* banner context container  */}
-                    <div className="col-span-2 lg:col-span-1 px-[1rem] xl:px-0 flex items-center">
+                    <div className="col-span-2 lg:col-span-1 flex items-center">
                         <div className="w-full">
                             {/* context tagline container container */}
                             <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
@@ -27,7 +27,7 @@ const Banner : React.FC = () => {
 
                             {/* context button container */}
                             <div className="flex flex-col lg:flex-row items-center gap-[1rem]">
-                                <button className="w-full lg:w-fit cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[0.75rem] text-white rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
+                                <button className="w-full font-semibold lg:w-fit cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[0.75rem] text-white rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
                                     start your project
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -35,7 +35,7 @@ const Banner : React.FC = () => {
 
                                 </button>
 
-                                <button className="w-full lg:w-fit cursor-pointer bg-white border-[1px] border-gray-600 px-[0.75rem] py-[0.5rem] text-[0.75rem] text-gray-800 rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
+                                <button className="w-full font-semibold lg:w-fit cursor-pointer bg-white border-[1px] border-gray-600 px-[0.75rem] py-[0.5rem] text-[0.75rem] text-gray-800 rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
                                     </svg>
@@ -67,7 +67,7 @@ const Banner : React.FC = () => {
                     </div>
 
                     {/* banner image container */}
-                    <div className="col-span-2 flex justify-end items-center lg:col-span-1 px-[1rem] xl:px-0">
+                    <div className="col-span-2 flex justify-center items-center lg:col-span-1 lg:justify-end">
                         <div className="relative">
                             <img src="/banner.avif" alt="banner image" className="w-auto rounded-lg lg:h-[35rem]" />
                             <div className="absolute top-8 left-4 md:left-4 rounded-lg bg-white px-[0.5rem] py-[0.75rem] bg-white">
@@ -76,9 +76,7 @@ const Banner : React.FC = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </>
     );

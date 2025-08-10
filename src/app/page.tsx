@@ -4,6 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Reviews from "./components/Reviews";
+import Contact from "./components/Contact";
 
 function Home(){
 
@@ -16,6 +17,7 @@ function Home(){
       <Portfolio />
       <Services />
       <Reviews />
+      <Contact />
     </>
   )
 };

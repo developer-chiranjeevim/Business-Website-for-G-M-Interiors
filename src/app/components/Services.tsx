@@ -15,7 +15,7 @@ const Services : React.FC  = () => {
                     </div>
                     <div className="text-center">
                         <h1 className="text-5xl leading-[4rem] font-semibold capitalize">what we offer</h1>
-                        <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">From initial concept to final installation, we provide comprehensive interior design <br></br>services tailored to your needs and budget.</p>
+                        <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem] capitalize">From initial concept to final installation, we provide comprehensive interior design <br></br>services tailored to your needs and budget.</p>
                     </div>
                 </div>
                 {/* service cards container */}
@@ -37,6 +37,20 @@ const Services : React.FC  = () => {
                     </div>
                      <div className="col-span-2 md:col-span-1 lg:col-span-1">
                         <ServiceCard />
+                    </div>
+                </div>
+                <div className="">
+                    <div className="bg-white text-center py-[2rem] border-[1px] border-gray-300 rounded-lg">  
+                        <h1 className="capitalize text-2xl font-semibold">ready to transform your space?</h1>
+                        <p className="text-gray-600 capitalize mt-[1rem]">Let's discuss your project and create a design solution that exceeds your <br></br>expectations.</p>
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-[1rem] mt-[1rem]">
+                            <button className="w-full font-semibold lg:w-fit cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[0.75rem] text-white rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
+                                schedule consulting 
+                            </button>
+                            <button className="w-full font-semibold lg:w-fit cursor-pointer bg-white border-[1px] border-gray-600 px-[0.75rem] py-[0.5rem] text-[0.75rem] text-gray-800 rounded-lg capitalize flex items-center justify-center gap-[0.25rem]"> 
+                                get quote
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

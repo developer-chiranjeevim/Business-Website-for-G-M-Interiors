@@ -8,7 +8,7 @@ const Banner : React.FC = () => {
     return(
         <>
             <div className="flex justify-center">
-                <div className="grid grid-cols-2 w-full max-w-[1440px] py-[2rem] px-[1rem] ">
+                <div className="grid grid-cols-2 gap-[1rem] w-full max-w-[1440px] py-[2rem] px-[1rem] ">
                     {/* banner context container  */}
                     <div className="col-span-2 lg:col-span-1 flex items-center">
                         <div className="w-full">

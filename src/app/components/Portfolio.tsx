@@ -7,7 +7,7 @@ const Portfolio : React.FC = () => {
 
     return(
         <>
-            <div className="flex justify-center">
+            <div id="portfolio" className="flex justify-center">
                 <div className="w-full max-w-[1440px] py-[2rem] px-[1rem]">
                     {/* tagline and title container */}
                     <div className="flex flex-col items-center">
@@ -23,7 +23,7 @@ const Portfolio : React.FC = () => {
                                 <li className="capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer">all</li>
                                 <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">residential</li>
                                 <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">commercial</li>
-                                <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">hospitality</li>
+                                <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">restaurant</li>
                             </ul>
                         </div>
                     </div>

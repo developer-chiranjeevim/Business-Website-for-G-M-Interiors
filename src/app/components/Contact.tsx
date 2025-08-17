@@ -6,7 +6,7 @@ const Contact : React.FC = () => {
 
     return(
         <>
-            <div className="flex justify-center bg-gray-100">
+            <div id="contact" className="flex justify-center bg-gray-100">
                 <div className="w-full max-w-[1440px] py-[2rem] px-[1rem]">
                     {/* tagline and title container */}
                     <div className="flex flex-col items-center">

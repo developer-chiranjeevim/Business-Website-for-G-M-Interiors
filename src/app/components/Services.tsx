@@ -6,7 +6,7 @@ const Services : React.FC  = () => {
 
     return(
         <>
-        <div className="flex justify-center bg-gray-100">
+        <div id="services" className="flex justify-center bg-gray-100">
             <div className="w-full max-w-[1440px] py-[2rem] px-[1rem]">
                 {/* tagline and title container */}
                 <div className="flex flex-col items-center">
@@ -40,7 +40,7 @@ const Services : React.FC  = () => {
                     </div>
                 </div>
                 <div className="">
-                    <div className="bg-white text-center py-[2rem] border-[1px] border-gray-300 rounded-lg">  
+                    <div className="bg-white text-center py-[2rem] px-[1rem] border-[1px] border-gray-300 rounded-lg">  
                         <h1 className="capitalize text-2xl font-semibold">ready to transform your space?</h1>
                         <p className="text-gray-600 capitalize mt-[1rem]">Let's discuss your project and create a design solution that exceeds your <br></br>expectations.</p>
                         <div className="flex flex-col lg:flex-row items-center justify-center gap-[1rem] mt-[1rem]">

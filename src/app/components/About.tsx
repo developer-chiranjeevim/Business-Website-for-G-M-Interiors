@@ -1,4 +1,6 @@
-import React from "react";
+
+
+
 
 
 const About : React.FC = () => {
@@ -6,7 +8,7 @@ const About : React.FC = () => {
 
     return(
         <>
-        <div className="flex justify-center bg-gray-100">
+        <div id="about" className="flex justify-center bg-gray-100">
             <div className="grid grid-cols-2 gap-4 w-full max-w-[1440px] py-[2rem] px-[1rem]">
                 {/* about context container */}
                 <div className="col-span-2 md:col-span-1">

@@ -9,7 +9,7 @@ const ProjectCard : React.FC = () => {
         <div className="w-full shadow-lg bg-white rounded-b-lg">
             <div className="relative">
                 <img src="/about-1.avif" alt="" className="rounded-t-lg w-full h-full object-fill" />
-                <div className="opacity-0 duration-200 hover:opacity-100 duration-200 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent h-5 rounded-t-lg flex justify-center items-center">
+                <div className="opacity-0 duration-200 hover:opacity-100 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent rounded-t-lg flex justify-center items-center">
                     <div className="flex items-center gap-[1rem]">
                         <div className="cursor-pointer w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full flex items-center gap-[0.5rem]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">

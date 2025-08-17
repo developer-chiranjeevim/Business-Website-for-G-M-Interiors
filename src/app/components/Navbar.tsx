@@ -8,6 +8,16 @@ const Navbar : React.FC = () => {
 
     const [isTopBarActive, setIsTopBarActive] = useState<boolean>(false);
 
+    const scrollToSection = (id: string) => {
+        console.log("clicked")
+        setIsTopBarActive(false);
+
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
     return(
         <>
             <div className="fixed top-0 w-full z-20 flex justify-center bg-white px-[1rem] py-[1.5rem] border-b-[1px] border-gray-300">
@@ -26,28 +36,28 @@ const Navbar : React.FC = () => {
                         {/* navbar menu */}
                         <div className="hidden lg:flex justify-center col-span-4">
                             <ul className="inline-flex items-center gap-[1rem]">
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">home</a>
+                                <li onClick={() => scrollToSection("banner") } className="relative group capitalize cursor-pointer">
+                                    home
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">about</a>
+                                <li onClick={() => scrollToSection("about") } className="relative group capitalize cursor-pointer">
+                                    about
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">portfolio</a>
+                                <li onClick={() => scrollToSection("portfolio") } className="relative group capitalize cursor-pointer">
+                                    portfolio
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">services</a>
+                                <li onClick={() => scrollToSection("services") } className="relative group capitalize cursor-pointer">
+                                    services
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">testimonials</a>
+                                <li onClick={() => scrollToSection("testimonials") } className="relative group capitalize cursor-pointer">
+                                    testimonials
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
-                                <li className="relative group">
-                                    <a href="#" className="text-black capitalize hover:text-black">contact</a>
+                                <li onClick={() => scrollToSection("contact") } className="relative group capitalize cursor-pointer">
+                                    contact
                                     <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-black group-hover:w-full transition-all duration-300"></span>
                                 </li>
                                 
@@ -70,7 +80,7 @@ const Navbar : React.FC = () => {
                 {/* topbar menu items container */}
                 <div className="px-[1rem] py-[2rem]">
                     <ul className="flex flex-col gap-[1rem]">
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("banner") } className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 home
                             </span>                           
@@ -79,7 +89,7 @@ const Navbar : React.FC = () => {
                             </svg>
                         </li>
 
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("about") }className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 about
                             </span>                           
@@ -89,7 +99,7 @@ const Navbar : React.FC = () => {
 
                         </li>
 
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("portfolio") } className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 portfoilo
                             </span>                           
@@ -99,7 +109,7 @@ const Navbar : React.FC = () => {
 
                         </li>
 
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("services") } className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 services
                             </span>                           
@@ -108,7 +118,7 @@ const Navbar : React.FC = () => {
                             </svg>
                         </li>
 
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("testimonials") } className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 testimonials
                             </span>                           
@@ -118,7 +128,7 @@ const Navbar : React.FC = () => {
 
                         </li>
 
-                        <li className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
+                        <li onClick={() => scrollToSection("contact") } className="inline-flex items-center justify-between w-full border-[1px] border-gray-300 px-[1rem] py-[0.5rem] rounded-lg">
                             <span className="capitalize text-[1rem]">
                                 contact
                             </span>                           

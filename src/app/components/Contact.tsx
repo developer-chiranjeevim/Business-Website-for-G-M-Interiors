@@ -1,8 +1,11 @@
-import React from "react";
+"use client"
+
+import { useState } from "react";
 
 
 const Contact : React.FC = () => {
 
+    const [onLoad, setOnLoad] = useState<boolean>(false);
 
     return(
         <>
@@ -58,6 +61,18 @@ const Contact : React.FC = () => {
                                             <textarea  className="bg-gray-200 w-full px-[1rem] py-[0.5rem] rounded-lg " placeholder="Please tell us about your project in detail" />
                                         </div>
                                     </div>
+                                    <button className="w-full capitalize cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[1rem] text-white rounded-lg my-[0.5rem]">
+                                        {
+                                            onLoad?
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-auto animate-spin  ">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                                            </svg>
+
+                                            :
+                                            "submit form"
+                                        }    
+                                        
+                                    </button>
                                 </form>
                             </div>
                         </div>

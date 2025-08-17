@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 const Navbar : React.FC = () => {
 
-    const [isTopBarActive, setIsTopBarActive] = useState<boolean>(true);
+    const [isTopBarActive, setIsTopBarActive] = useState<boolean>(false);
 
     return(
         <>
@@ -66,7 +66,7 @@ const Navbar : React.FC = () => {
                 </div>
             </div>
             <div className="h-[85px]"></div>
-            <div className={`fixed z-10 w-full min-h-[45vh] bg-white ${isTopBarActive?"top-[82px]" : "-top-[100vh]"} duration-400 border-b-[2px] border-gray-300 lg:h`}>
+            <div className={`fixed z-10 w-full min-h-[45vh] bg-white ${isTopBarActive?"top-[82px]" : "-top-[100vh]"} duration-400 border-b-[2px] border-gray-300 lg:hidden`}>
                 {/* topbar menu items container */}
                 <div className="px-[1rem] py-[2rem]">
                     <ul className="flex flex-col gap-[1rem]">

@@ -1,0 +1,22 @@
+{
+    "datas": [
+        {
+            "image":"/about-1.avif",
+            "location": "manhattan, ny",
+            "title": "mordern penthouse",
+            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+        },
+        {
+            "image":"/about-1.avif",
+            "location": "manhattan, ny",
+            "title": "mordern penthouse",
+            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+        },
+        {
+            "image":"/about-1.avif",
+            "location": "manhattan, ny",
+            "title": "mordern penthouse",
+            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+        }
+    ]
+}

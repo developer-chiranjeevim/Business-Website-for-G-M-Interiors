@@ -1,14 +1,20 @@
 import React from "react";
 
+interface CardProps {
+    image: string,
+    title: string,
+    description: string,
+    location: string,
+    type: string
+}
 
-
-const ProjectCard : React.FC = () => {
+const ProjectCard : React.FC<CardProps> = ({image, title, description, location, type}) => {
 
 
     return(
         <div className="w-full shadow-lg bg-white rounded-b-lg">
             <div className="relative">
-                <img src="/about-1.avif" alt="" className="rounded-t-lg w-full h-full object-fill" />
+                <img src={image} alt="" className="rounded-t-lg w-full h-full object-fill" />
                 <div className="opacity-0 duration-200 hover:opacity-100 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent rounded-t-lg flex justify-center items-center">
                     <div className="flex items-center gap-[1rem]">
                         <div className="cursor-pointer w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full flex items-center gap-[0.5rem]">
@@ -30,16 +36,16 @@ const ProjectCard : React.FC = () => {
             <div className="w-full px-[1rem] py-[0.5rem]">
                 <div className="flex items-center justify-between my-[1rem]">
                     <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
-                        <h1 className="capitalize text-[0.75rem] text-gray-800">Resedential</h1>
+                        <h1 className="capitalize text-[0.75rem] text-gray-800">{type}</h1>
                     </div>
                     <div className="">
-                        <p className="capitalize">Manhattan, NY</p>
+                        <p className="capitalize">{location}</p>
                     </div>
                 </div>
 
                 <div className="mb-[1rem]">
-                    <h1 className="capitalize text-[1rem] font-semibold">Modern Penthouse</h1>
-                    <p className="capitalize text-justify text-gray-600 text-[0.85rem] mt-[0.75rem]">A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views.</p>
+                    <h1 className="capitalize text-[1rem] font-semibold">{title}</h1>
+                    <p className="capitalize text-justify text-gray-600 text-[0.85rem] mt-[0.75rem]">{description}</p>
                 </div>
             </div>
         </div>

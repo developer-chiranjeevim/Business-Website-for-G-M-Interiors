@@ -47,7 +47,7 @@ const Banner : React.FC = () => {
                             {/* metrics master container */}
                             <div className="my-[2rem] flex items-center justify-center lg:justify-start gap-[1.5rem]">
                                 {/* metric container */}
-                                <div className="text-center md:text-start">
+                                {/* <div className="text-center md:text-start">
                                     <h1 className="text-2xl font-semibold">250 +</h1>
                                     <p className="capitalize text-gray-600 text-[0.75rem]">projects completed</p>
                                 </div>
@@ -60,7 +60,7 @@ const Banner : React.FC = () => {
                                 <div className="text-center md:text-start">
                                     <h1 className="text-2xl font-semibold">15 +</h1>
                                     <p className="capitalize text-gray-600 text-[0.75rem]">years experience</p>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

@@ -1,11 +1,38 @@
 "use client"
 
 import { useState } from "react";
+import { Formik, Form, Field, ErrorMessage, FormikValues } from 'formik';
+import * as Yup from 'yup';
+
+
+
+interface FormInputValues {
+    firstname: string,
+    lastname: string,
+    email: string,
+    number: string,
+    message: string,
+};
 
 
 const Contact : React.FC = () => {
 
     const [onLoad, setOnLoad] = useState<boolean>(false);
+
+    const validationSchema = Yup.object({
+        firstname: Yup.string().required('First Name is required'),
+        lastname: Yup.string().required('Last Name is required'),
+        email: Yup.string().email('Invalid email').required('Email is required'),
+        number: Yup.string().matches(/^[0-9]+$/, 'Only digits are allowed').min(10, 'Contact number must be exactly 10 digits').max(10, 'Contact number must be exactly 10 digits').required('Contact Number is required'),
+        message: Yup.string().min(5, 'Message Should Be Minimum 5 Characters').required('Message is Required'),
+    });
+    const initialValues: FormInputValues= { firstname:'', lastname:'' , email: '', number: '', message: ''};
+
+
+    const onSubmit = (values: FormInputValues) => {
+        console.log(values);
+
+    };
 
     return(
         <>
@@ -32,48 +59,55 @@ const Contact : React.FC = () => {
                                     </svg>
                                     <h1 className="">Send Us a Message</h1>
                                 </div>
-                                <form action="" className="mt-[1rem]">
-                                    <div className="grid grid-cols-2 gap-[1rem]">
-                                        <div className="col-span-1">
-                                            <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">first name</label><br></br>
-                                            <input type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg" placeholder="john" />
+                                <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+                                    <Form action="submit" className="">
+                                        <div className="grid grid-cols-2 gap-[1rem]">
+                                            <div className="col-span-1">
+                                                <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">first name</label><br></br>
+                                                <Field name="firstname" type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg focus:outline-none" placeholder="john" />
+                                                <ErrorMessage name="firstname" component="p" className="text-red-500 text-[1rem] mt-[0.5rem]"  />
+                                            </div>
+                                            <div className="col-span-1">
+                                                <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">last name</label><br></br>
+                                                <Field name="lastname" type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg focus:outline-none" placeholder="mathew" />
+                                                <ErrorMessage name="lastname" component="p" className="text-red-500 text-[1rem] mt-[0.5rem]" />
+                                            </div>
                                         </div>
-                                        <div className="col-span-1">
-                                            <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">last name</label><br></br>
-                                            <input type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg" placeholder="mathew" />
+                                        <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
+                                            <div className="col-span-1">
+                                                <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">email</label><br></br>
+                                                <Field name="email" type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg focus:outline-none" placeholder="john@gmail.com" />
+                                                <ErrorMessage name="email" component="p" className="text-red-500 text-[1rem] mt-[0.5rem]" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
-                                        <div className="col-span-1">
-                                            <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">email</label><br></br>
-                                            <input type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg" placeholder="john@gmail.com" />
+                                        <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
+                                            <div className="col-span-1">
+                                                <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">phone</label><br></br>
+                                                <Field name="number" type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg focus:outline-none" placeholder="(+1) 999 999 9999" />
+                                                <ErrorMessage name="number" component="p" className="text-red-500 text-[1rem] mt-[0.5rem]" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
-                                        <div className="col-span-1">
-                                            <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">phone</label><br></br>
-                                            <input type="text" className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg" placeholder="(+1) 999 999 9999" />
+                                        <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
+                                            <div className="col-span-1">
+                                                <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">tell us about your project</label><br></br>
+                                                <Field name="message" as="textarea"  className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg focus:outline-none" placeholder="Please tell us about your project in detail" />
+                                                <ErrorMessage name="message" component="p" className="text-red-500 text-[1rem] mt-[0.5rem]" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="grid grid-cols-1 gap-[1rem] mt-[1rem]">
-                                        <div className="col-span-1">
-                                            <label htmlFor="" className="capitalize font-semibold text-[0.875rem]">tell us about your project</label><br></br>
-                                            <textarea  className="bg-white w-full px-[1rem] py-[0.5rem] rounded-lg " placeholder="Please tell us about your project in detail" />
-                                        </div>
-                                    </div>
-                                    <button className="w-full capitalize cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[1rem] text-white rounded-lg my-[0.5rem]">
-                                        {
-                                            onLoad?
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-auto animate-spin  ">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
-                                            </svg>
+                                        <button type="submit" className="w-full capitalize cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[1rem] text-white rounded-lg my-[0.5rem]">
+                                            {
+                                                onLoad?
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-auto animate-spin  ">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                                                </svg>
 
-                                            :
-                                            "submit form"
-                                        }    
-                                        
-                                    </button>
-                                </form>
+                                                :
+                                                "submit form"
+                                            }    
+                                            
+                                        </button>
+                                    </Form>
+                                </Formik>
                             </div>
                         </div>
                         <div className="col-span-2 lg:col-span-1">

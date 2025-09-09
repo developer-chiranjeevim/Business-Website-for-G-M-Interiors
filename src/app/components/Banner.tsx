@@ -70,7 +70,7 @@ const Banner : React.FC = () => {
                     <div className="col-span-2 flex justify-center items-center lg:col-span-1 lg:justify-end">
                         <div className="relative">
                             <img src="/banner.avif" alt="banner image" className="w-auto rounded-lg lg:h-[35rem]" />
-                            <div className="absolute top-8 left-4 md:left-4 rounded-lg bg-white px-[0.5rem] py-[0.75rem] bg-white">
+                            <div className="absolute top-8 left-4 md:left-4 rounded-lg bg-white px-[0.5rem] py-[0.75rem]">
                                 <p className="capitalize text-[0.75rem]">fetaured in</p>
                                 <h1 className="capitalize text-black text-[1rem] font-semibold">architectural digest</h1>
                             </div>

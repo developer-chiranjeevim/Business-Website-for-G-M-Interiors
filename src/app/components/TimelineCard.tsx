@@ -24,13 +24,13 @@ const TimeLineCard : React.FC = () => {
                 </svg>
             </div>
             <div className="ml-[1rem] bg-gray-100 px-[1rem] py-[0.5rem] rounded-lg">
-                <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-500">
                     February 2022
                 </time>
-                <h3 className="text-[1rem] capitalize text-lg font-semibold text-gray-900 dark:text-white">
+                <h3 className="text-[1rem] capitalize text-lg font-semibold text-gray-900">
                     mordern penthouse
                 </h3>
-                <p className="text-[0.85rem] capitalize mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                <p className="text-[0.85rem] capitalize mb-4 text-base font-normal text-gray-500 ">
                     A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views.
                 </p>
                 

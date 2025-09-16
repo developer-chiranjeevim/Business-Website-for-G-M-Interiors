@@ -43,11 +43,7 @@ const Portfolio : React.FC = () => {
         if(current == optionActive){
             return;
         }else{
-            if(optionActive == "commercial"){
-                setOptionActive("restaurant");
-            }else{
-                setOptionActive("commercial");
-            };
+            setOptionActive(current);
         };
 
         // console.log(optionActive);
@@ -73,6 +69,7 @@ const Portfolio : React.FC = () => {
                                 {/* <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">residential</li> */}
                                 <li onClick={(event) => toggleOption("commercial")} className={(optionActive == "commercial"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>commercial</li>
                                 <li onClick={(event) => toggleOption("restaurant")} className={(optionActive == "restaurant"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>restaurant</li>
+                                <li onClick={(event) => toggleOption("residential")} className={(optionActive == "residential"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>residential</li>
                             </ul>
                         </div>
                     </div>
@@ -86,21 +83,6 @@ const Portfolio : React.FC = () => {
                                 </div>
                             ))
                         }
-                        {/* <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                            <ProjectCard />
-                        </div>
-                        <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                            <ProjectCard />
-                        </div>
-                         <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                            <ProjectCard />
-                        </div>
-                         <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                            <ProjectCard />
-                        </div>
-                         <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                            <ProjectCard />
-                        </div> */}
                     </div>
                     <div className="w-full flex justify-center">
                         <button className="w-full font-semibold lg:w-fit cursor-pointer bg-white border-[1px] border-gray-600 px-[0.75rem] py-[0.5rem] text-[0.75rem] text-gray-800 rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">

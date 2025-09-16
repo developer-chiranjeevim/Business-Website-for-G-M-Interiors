@@ -23,17 +23,21 @@ const TimeLineCard : React.FC = () => {
                                 2.25h.008v.008H16.5V15Z" />
                 </svg>
             </div>
-            <div className="ml-[1rem] bg-gray-100 px-[1rem] py-[0.5rem] rounded-lg">
-                <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-500">
-                    February 2022
-                </time>
-                <h3 className="text-[1rem] capitalize text-lg font-semibold text-gray-900">
-                    mordern penthouse
-                </h3>
-                <p className="text-[0.85rem] capitalize mb-4 text-base font-normal text-gray-500 ">
-                    A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views.
-                </p>
-                
+            <div className="ml-[1rem] bg-gray-100 p-[0.5rem] rounded-lg">
+                <div className="relative w-full">
+                    <img src="/about-1.avif" alt="timeline card image" className="w-full h-full object-cover rounded-lg" />
+                </div>
+                <div className="mt-[1rem]">
+                    <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-500">
+                        February 2022
+                    </time>
+                    <h3 className="text-[1rem] capitalize text-lg font-semibold text-gray-900">
+                        mordern penthouse
+                    </h3>
+                    <p className="text-[0.85rem] capitalize mb-4 text-base font-normal text-gray-500 ">
+                        A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views.
+                    </p>
+                </div>
             </div>
         </li>
     );

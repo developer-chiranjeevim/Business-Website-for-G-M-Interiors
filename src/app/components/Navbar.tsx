@@ -20,7 +20,7 @@ const Navbar : React.FC = () => {
 
     return(
         <>
-            <div className="fixed top-0 w-full z-20 flex justify-center bg-white px-[1rem] py-[1.5rem] border-b-[1px] border-gray-300">
+            <div className="fixed top-0 w-full z-30 flex justify-center bg-white px-[1rem] py-[1.5rem] border-b-[1px] border-gray-300">
                 <div className="w-full max-w-[1440px] ">
                     <div className="grid grid-cols-6 lg:col-span-1">
                         {/* navbar logo */}
@@ -79,8 +79,8 @@ const Navbar : React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[85px]"></div>
-            <div className={`fixed z-10 w-full min-h-[45vh] bg-white ${isTopBarActive?"top-[82px]" : "-top-[100vh]"} duration-400 border-b-[2px] border-gray-300 lg:hidden`}>
+            <div className="block lg:hidden h-[85px]"></div>
+            <div className={`fixed z-20 w-full min-h-[45vh] bg-white ${isTopBarActive?"top-[82px]" : "-top-[100vh]"} duration-400 border-b-[2px] border-gray-300 lg:hidden`}>
                 {/* topbar menu items container */}
                 <div className="px-[1rem] py-[2rem]">
                     <ul className="flex flex-col gap-[1rem]">

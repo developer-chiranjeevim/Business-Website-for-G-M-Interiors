@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import CarouselBanner from "./components/CarouselBanner";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
@@ -14,7 +15,8 @@ function Home(){
   return(
     <>
       <Navbar />
-      <Banner />
+      <CarouselBanner />
+      {/* <Banner /> */}
       <About />
       <Portfolio />
       <Services />

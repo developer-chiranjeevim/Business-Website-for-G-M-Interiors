@@ -57,11 +57,11 @@ const Portfolio : React.FC = () => {
                     {/* tagline and title container */}
                     <div className="flex flex-col items-center">
                         <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
-                            <h1 className="capitalize text-[0.75rem] text-gray-800">Portfolio</h1>
+                            <h1 className="capitalize text-[0.75rem] text-gray-800">Our Work</h1>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Latest Projects</h1>
-                            <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">Explore our portfolio of stunning interior design projects that showcase our <br></br>expertise across residential, commercial, and hospitality spaces.</p>
+                            <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Portfolio</h1>
+                            <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">Explore our collection of interior design projects across residential, commercial, and <br></br>restaurant spaces.</p>
                         </div>
                         <div className="my-[2rem]">
                             <ul className="inline-flex items-center justify-center gap-[1rem] flex-wrap">

@@ -18,7 +18,7 @@ const About : React.FC = () => {
                     </div>
                     {/* header and text container */}
                     <div className="py-[1rem]">
-                        <h1 className="text-5xl leading-[4rem] font-semibold">Creating Beautiful Spaces Since 2008</h1>
+                        <h1 className="text-5xl leading-[4rem] font-semibold">Creating Beautiful Spaces</h1>
                         <p className="mt-[1rem] leading-[1.75rem] text-justify text-gray-600">
                             We are passionate interior designers dedicated to transforming ordinary spaces into extraordinary environments. Our approach combines creativity, functionality, and attention to detail to deliver spaces that truly reflect our clients' vision.
                         </p>

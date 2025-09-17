@@ -1,0 +1,7 @@
+{
+    "datas": [
+        {"icon": "/icons/residential.svg", "title": "Residential Design", "content": "Transform your home into a beautiful, functional space that reflects your personal style and enhances your daily living experience.", "perks": ["Space planning & layout optimization", "Custom furniture & decor selection", "Color scheme & material selection", "Lighting design & implementation"]},
+        {"icon": "/icons/commercial.svg", "title": "Commercial Design", "content": "Create inspiring workspaces that boost productivity, reflect your brand identity, and impress clients and employees alike.", "perks": ["Office space planning & design", "Reception & common area design", "Brand integration & wayfinding", "Furniture specification & procurement"]},
+        {"icon": "/icons/restaurant.svg", "title": "Restaurant Design", "content": "Design dining spaces that create memorable experiences, optimize workflow, and maximize seating capacity and comfort.", "perks":["Dining area layout & design", "Kitchen workflow optimization", "Bar & waiting area design", "Branding & atmosphere creation"]}
+    ]
+}

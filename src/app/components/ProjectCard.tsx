@@ -33,7 +33,7 @@ const ProjectCard : React.FC<CardProps> = ({image, title, description, location,
                     </div>
                 </div>
             </div>
-            <div className="w-full px-[1rem] py-[0.5rem]">
+            {/* <div className="w-full px-[1rem] py-[0.5rem]">
                 <div className="flex items-center justify-between my-[1rem]">
                     <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
                         <h1 className="capitalize text-[0.75rem] text-gray-800">{type}</h1>
@@ -47,7 +47,7 @@ const ProjectCard : React.FC<CardProps> = ({image, title, description, location,
                     <h1 className="capitalize text-[1rem] font-semibold">{title}</h1>
                     <p className="capitalize text-justify text-gray-600 text-[0.85rem] mt-[0.75rem]">{description}</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

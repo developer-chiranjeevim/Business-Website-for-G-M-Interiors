@@ -1,8 +1,39 @@
-import React from "react";
+"use client";
+
+import React,{ useState, useEffect} from "react";
 import ServiceCard from "./ServiceCard";
+import axios from "axios";
+
+interface cardDatasIf {
+    title: string,
+    content: string,
+    icon: string,
+    perks: string[],
+}
 
 const Services : React.FC  = () => {
+    const [datas, setDatas] = useState<cardDatasIf[]>([]);
 
+    useEffect(() => {
+        const fetchData = async() => {
+            try{
+                const request = await axios.get(`/data/services.json`);
+                const data = await request.data;
+                setDatas(data.datas);
+                console.log(data);
+
+            }catch(error: unknown){
+                if(error instanceof Error){
+                    console.log(error.message);
+                }else{
+                    console.log("An unexpected error occurred:", error);
+                };
+            };
+        };
+
+        fetchData();
+        
+    },[]);
 
     return(
         <>
@@ -11,33 +42,22 @@ const Services : React.FC  = () => {
                 {/* tagline and title container */}
                 <div className="flex flex-col items-center">
                     <div className="w-fit px-[0.5rem] py-[0.25rem] bg-gray-200 rounded-full">
-                        <h1 className="capitalize text-[0.75rem] text-gray-800">services</h1>
+                        <h1 className="capitalize text-[0.75rem] text-gray-800">Our Services</h1>
                     </div>
                     <div className="text-center">
                         <h1 className="text-5xl leading-[4rem] font-semibold capitalize">what we offer</h1>
-                        <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem] capitalize">From initial concept to final installation, we provide comprehensive interior design <br></br>services tailored to your needs and budget.</p>
+                        <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem] capitalize">From initial concept to final installation, we provide comprehensive interior design services <br></br>tailored to transform your space into something extraordinary.</p>
                     </div>
                 </div>
                 {/* service cards container */}
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-[1rem] mt-[1.5rem]">
-                    <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
-                    <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
-                    <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
-                     <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
-                     <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
-                     <div className="col-span-2 md:col-span-1 lg:col-span-1">
-                        <ServiceCard />
-                    </div>
+                    {
+                        datas?.map((data, id) => (
+                            <div key={id} className="col-span-2 md:col-span-1 lg:col-span-1">
+                                <ServiceCard title={data.title} content={data.content} icon={data.icon} perks={data.perks} />
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="">
                     <div className="bg-white text-center py-[2rem] px-[1rem] border-[1px] border-gray-300 rounded-lg">  

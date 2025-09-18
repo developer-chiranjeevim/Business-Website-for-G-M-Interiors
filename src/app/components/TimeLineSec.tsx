@@ -1,7 +1,42 @@
-import React from "react";
+"use client";
+
+import React,{ useState, useEffect } from "react";
 import TimeLineCard from "./TimelineCard";
+import axios from "axios";
+
+interface timelineIf {
+    image: string,
+    date: string,
+    title: string,
+    context: string,
+};
+
 
 const TimelineSec : React.FC = () => {
+
+    const [ timelineDatas, setTimelineDatas ] = useState<timelineIf[]>([]);
+
+    useEffect(() => {
+        const fetchData = async() => {
+            try{
+                const request = await axios.get(`/data/timeline.json`);
+                const data = await request.data;
+                console.log(data.datas);
+                setTimelineDatas(data.datas);
+                
+
+            }catch(error: unknown){
+                if(error instanceof Error){
+                    console.log(error.message);
+                }else{
+                    console.log("An unexpected error occurred:", error);
+                };
+            };
+        };
+
+        fetchData();
+
+    },[]);
 
     return(
         <div id="timeline" className="flex justify-center">
@@ -19,10 +54,11 @@ const TimelineSec : React.FC = () => {
                 {/* timeline component */}
                 <div className="my-[2rem] px-[1rem]">
                     <ol className="relative border-s border-gray-200 dark:border-gray-700">                  
-                        <TimeLineCard />
-                        <TimeLineCard />
-                        <TimeLineCard />
-                        <TimeLineCard />
+                        {
+                            timelineDatas.map((timeline, key) => (
+                                <TimeLineCard key={key} image={timeline.image} date={timeline.date} title={timeline.title} context={timeline.context} />                                
+                            ))
+                        }
                     </ol>
                 </div>
             </div>

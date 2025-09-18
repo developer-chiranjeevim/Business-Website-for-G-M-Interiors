@@ -1,8 +1,15 @@
 import React from "react";
 
 
+interface timelineIf {
+    image: string,
+    date: string,
+    title: string,
+    context: string,
+};
 
-const TimeLineCard : React.FC = () => {
+
+const TimeLineCard : React.FC<timelineIf> = ({ image, date, title, context }) => {
 
 
     return(
@@ -25,17 +32,17 @@ const TimeLineCard : React.FC = () => {
             </div>
             <div className="ml-[1rem] bg-gray-100 p-[0.5rem] rounded-lg">
                 <div className="relative w-full">
-                    <img src="/about-1.avif" alt="timeline card image" className="w-full h-full object-cover rounded-lg" />
+                    <img src={image} alt="timeline card image" className="w-full h-full object-cover rounded-lg" />
                 </div>
                 <div className="mt-[1rem]">
                     <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-500">
-                        February 2022
+                       {date}
                     </time>
                     <h3 className="text-[1rem] capitalize text-lg font-semibold text-gray-900">
-                        mordern penthouse
+                        {title}
                     </h3>
                     <p className="text-[0.85rem] capitalize mb-4 text-base font-normal text-gray-500 ">
-                        A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views.
+                        {context}
                     </p>
                 </div>
             </div>

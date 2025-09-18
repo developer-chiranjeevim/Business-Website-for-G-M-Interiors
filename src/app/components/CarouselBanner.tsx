@@ -7,6 +7,7 @@ import { Autoplay } from "swiper/modules";
 
 
 interface SwiperOverlapIF {
+    image: string,
     subTitle: string,
     title: string,
     content: string,
@@ -17,7 +18,7 @@ interface SwiperOverlapIF {
 const SwiperOverLap = (params: SwiperOverlapIF) => {
     return(
         <div className="relative">
-            <img src="/banner-carousel.avif" alt="swiper image" className="w-full h-full lg:h-[100vh] object-cover" />
+            <img src={params.image} alt="swiper image" className="w-full h-full lg:h-[100vh] object-cover" />
             <div className="absolute top-0 z-10 w-full h-full bg-black opacity-75"></div>
                 <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center px-[2rem] lg:px-[15rem]">
                     <div className="w-full max-w-[1440px]">
@@ -62,6 +63,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
+                                image:"/banner-carousel.avif",
                                 subTitle: "Luxury Interior Design & Build",
                                 title: "Modern Interiors for Contemporary Living",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
@@ -75,6 +77,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
+                                image:"/banner-carousel.avif",
                                 subTitle: "Luxury Interior Design",
                                 title: "Modern Interiors for Contemporary Living",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
@@ -88,6 +91,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
+                                image:"/banner-carousel.avif",
                                 subTitle: "Luxury Interior Design",
                                 title: "Elevate Your Space with Timeless Design",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",

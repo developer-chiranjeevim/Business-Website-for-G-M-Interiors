@@ -9,19 +9,28 @@ interface cardDatasIF{
     location: string,
     title: string,
     description: string,
+    item: string,
 }
 
 const Portfolio : React.FC = () => {
 
     const [optionActive, setOptionActive] = useState<string>("commercial");
     const [cardDatas, setCardDatas] = useState<cardDatasIF[]>([]);
+    const [currentCards, setCurrentCards] = useState<cardDatasIF[]>([]);
+    const [items, setItems] = useState<string[]>([]);
+    const [currentItem, setCurrentItem] = useState<string>();
 
     useEffect(()=>{
+        //useEffect Hook to fetch data cart and card items data
         const fetchData = async() => {
             try{
                 const request = await axios.get(`/data/${optionActive}.json`);
                 const data = await request.data;
                 setCardDatas(data.datas);
+                setCurrentCards(data.datas);
+                setItems(data.items);
+                setCurrentItem(data.items[0]);
+                
 
             }catch(error: unknown){
                 if(error instanceof Error){
@@ -37,6 +46,25 @@ const Portfolio : React.FC = () => {
         fetchData();
     },[optionActive]);
 
+    const handleItemChange = (current: string) => {
+        let new_items: cardDatasIF[] = [];
+        setCurrentItem(current);
+       
+
+        if(current == "all"){
+            new_items = cardDatas;
+        }else{
+            for(var i = 0; i < cardDatas.length; i++){
+                if(cardDatas[i].item == currentItem){
+                    new_items.push(cardDatas[i]);
+                };
+            };
+        }
+
+        setCurrentCards(new_items);
+
+    };
+
     
 
     const toggleOption = (current: string) => {
@@ -48,6 +76,8 @@ const Portfolio : React.FC = () => {
 
         // console.log(optionActive);
     };
+
+    
 
 
     return(
@@ -63,7 +93,7 @@ const Portfolio : React.FC = () => {
                             <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Portfolio</h1>
                             <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">Explore our collection of interior design projects across residential, commercial, and <br></br>restaurant spaces.</p>
                         </div>
-                        <div className="my-[2rem]">
+                        <div className="my-[1rem]">
                             <ul className="inline-flex items-center justify-center gap-[1rem] flex-wrap">
                                 {/* <li className="capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer">all</li> */}
                                 {/* <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">residential</li> */}
@@ -72,12 +102,23 @@ const Portfolio : React.FC = () => {
                                 <li onClick={(event) => toggleOption("residential")} className={(optionActive == "residential"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>residential</li>
                             </ul>
                         </div>
+                        <div className="my-[1rem]">
+                            {/* portfolio select submenu container */}
+                            <ul className="inline-flex items-center justify-center gap-[1rem] flex-wrap">
+                                {/* <li className="capitalize border-[1px] border-gray-400 px-[1rem] py-[0.5rem] rounded-full">all</li> */}
+                                {
+                                    items.map((item, key) => (
+                                        <li onClick={(event) => handleItemChange(item)} key={key} className={(currentItem == item?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>{item}</li>
+                                    ))
+                                }                               
+                            </ul>
+                        </div>
                     </div>
                     {/* projects master container */}
-                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-[1rem]">
+                    <div className="my-[1rem] grid grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-[1rem]">
                        
                         {
-                            cardDatas.map((card, key) => (
+                            currentCards.map((card, key) => (
                                <div key={key} className="col-span-2 md:col-span-1 lg:col-span-1">
                                     <ProjectCard image={card.image} title={card.title} description={card.description} location={card.location} type={optionActive} />
                                 </div>

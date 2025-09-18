@@ -1,22 +1,26 @@
 {
+    "items": ["all", "reception tables", "kitchen units", "partition units", "fall ceiling", "furniture works", "texture/wallpaper"],
     "datas": [
         {
             "image":"/about-1.avif",
             "location": "manhattan, ny",
             "title": "mordern penthouse",
-            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
+            "item":"reception tables"
         },
         {
             "image":"/about-1.avif",
             "location": "manhattan, ny",
             "title": "mordern penthouse",
-            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
+            "item": "reception tables"
         },
         {
             "image":"/about-1.avif",
             "location": "manhattan, ny",
             "title": "mordern penthouse",
-            "description": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
+            "item":"furniture works"
         }
     ]
 }

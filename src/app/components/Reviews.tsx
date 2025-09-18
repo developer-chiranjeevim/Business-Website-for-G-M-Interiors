@@ -1,7 +1,45 @@
-import React from "react";
+"use client"
+
+import React,{ useState, useEffect } from "react";
 import ReviewCard from "./ReviewCard";
+import axios from "axios";
+
+
+interface reviewsIf {
+    star: number,
+    avatar: string, 
+    context: string,
+    owner_name: string,
+    owner_type: string,
+    location: string,
+    subtext: string,
+};
+
 
 const Reviews : React.FC = () => {
+
+    const [ reviews, setReviews ] = useState<reviewsIf[]>([]);
+
+    useEffect(() => {
+        const fetchData = async() => {
+            try{
+                const request = await axios.get(`/data/reviews.json`);
+                const data = await request.data;
+                console.log(data.datas)
+                setReviews(data.datas);
+                
+
+            }catch(error: unknown){
+                if(error instanceof Error){
+                    console.log(error.message);
+                }else{
+                    console.log("An unexpected error occurred:", error);
+                };
+            };
+        };
+
+        fetchData();
+    },[]);
 
 
     return(
@@ -20,7 +58,17 @@ const Reviews : React.FC = () => {
                     </div>
                     {/* review cards container */}
                     <div className="grid grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-[1rem] mt-[1.5rem]">
-                        <div className="col-span-2 md:col-span-1 lg:col-span-1">
+                        {
+                            reviews.map((review, key) => (
+                                <div key={key} className="col-span-2 md:col-span-1 lg:col-span-1">
+                                    <ReviewCard star={review.star} avatar={review.avatar} context={review.context} owner_name={review.owner_name} owner_type={review.owner_type} location={review.location} subtext={review.subtext} />
+                                </div>
+                            ))
+
+                        }
+
+
+                        {/* <div className="col-span-2 md:col-span-1 lg:col-span-1">
                             <ReviewCard />
                         </div>
                         <div className="col-span-2 md:col-span-1 lg:col-span-1">
@@ -37,7 +85,7 @@ const Reviews : React.FC = () => {
                         </div>
                         <div className="col-span-2 md:col-span-1 lg:col-span-1">
                             <ReviewCard />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

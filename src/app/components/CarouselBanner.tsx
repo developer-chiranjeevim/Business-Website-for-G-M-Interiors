@@ -60,10 +60,10 @@ const CarouselBanner = () => {
                     }}
                     modules={[Autoplay]}
                     >
-                    <SwiperSlide>
+                     <SwiperSlide>
                         { 
                             SwiperOverLap({
-                                image:"/banner-carousel.avif",
+                                image:"/images/residential/IMG_20250307_213229.jpg",
                                 subTitle: "Luxury Interior Design & Build",
                                 title: "Modern Interiors for Contemporary Living",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
@@ -77,7 +77,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
-                                image:"/banner-carousel.avif",
+                                image:"/images/commercial/commercial_3.jpg",
                                 subTitle: "Luxury Interior Design",
                                 title: "Modern Interiors for Contemporary Living",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
@@ -91,7 +91,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
-                                image:"/banner-carousel.avif",
+                                image:"/images/Restaurant/Res_1.jpg",
                                 subTitle: "Luxury Interior Design",
                                 title: "Elevate Your Space with Timeless Design",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",

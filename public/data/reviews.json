@@ -4,7 +4,7 @@
             "star": 5,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "G&M Interiors transformed our 3BHK into a modern masterpiece. Their attention to detail and understanding of our needs was exceptional. Every corner reflects their craftsmanship.",
-            "owner_name": "Priya Sharma",
+            "owner_name": "Ravishinu",
             "owner_type": "housewoner",
             "location": "coimbatore",
             "subtext": "Modern Apartment Makeover"
@@ -13,7 +13,7 @@
             "star": 5,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "The team's ability to blend aesthetics with functionality is remarkable. Our restaurant's new look has received countless compliments from customers. Truly professional service!",
-            "owner_name": "Arjun Kapoor",
+            "owner_name": "Chiranjeevi",
             "owner_type": "Restaurant Owner",
             "location": "Race Course",
             "subtext": "Fine Dining Restaurant"
@@ -22,7 +22,7 @@
             "star": 4,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "Working with G&M was a game-changer for our office space. They created a vibrant yet professional environment that boosts productivity. Their project management was flawless.",
-            "owner_name": "Meera Nair",
+            "owner_name": "Manoj",
             "owner_type": "CEO, TechStart",
             "location": "RS Puram",
             "subtext": "Corporate Office"
@@ -31,8 +31,7 @@
             "star": 5,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "The lobby redesign has significantly enhanced our guests' first impression. The team's creativity and attention to detail are unmatched in Coimbatore. Highly recommended!",
-            "owner_name": "Vikram Menon",
-            "owner_type": "Hotelier",
+            "owner_name": "Vikram",
             "location": "Gandhipuram",
             "subtext": "Boutique Hotel Lobby"
         },
@@ -40,7 +39,7 @@
             "star": 4,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "Our clinic needed a complete makeover that was both welcoming and functional. G&M delivered beyond our expectations. The space is now more efficient and patient-friendly.",
-            "owner_name": "Ananya Reddy",
+            "owner_name": "Perumal",
             "owner_type": "Doctor",
             "location": "Saibaba Colony",
             "subtext": "Clinic Interior"
@@ -49,7 +48,7 @@
             "star": 5,
             "avatar": "https://randomuser.me/api/portraits/women/32.jpg",
             "context": "The smart home integration they did is seamless. They understood our techie requirements perfectly and delivered a modern, automated living space that's both beautiful and functional.",
-            "owner_name": "Rahul Iyer",
+            "owner_name": "Rahul",
             "owner_type": "IT Professional",
             "location": "Tatabad",
             "subtext": "Smart Home Setup"

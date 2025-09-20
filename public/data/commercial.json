@@ -1,26 +1,50 @@
 {
-    "items": ["all", "reception tables", "kitchen units", "partition units", "fall ceiling", "furniture works", "texture/wallpaper"],
+    "items": ["all", "md rooms/tables", "conference hall", "meeting area", "reception/tables", "party unit", "pooja room","false ceiling design","texture/wallpaper"],
     "datas": [
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item":"reception tables"
+            "image":"/images/commercial/commercial_1.jpg",
+            "item":"all"
         },
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item": "reception tables"
+            "image":"/images/commercial/commercial_2.jpg",
+            "item": "all"
         },
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item":"furniture works"
+            "image":"/images/commercial/commercial_3.jpg",
+            "item":"all"
+        },
+        {
+            "image":"/images/commercial/commercial_4.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG_20230821_132358268.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0013.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0016.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0022.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0027.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0028.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/commercial/IMG-20230820-WA0032.jpg",
+            "item": "all"
         }
+
     ]
 }

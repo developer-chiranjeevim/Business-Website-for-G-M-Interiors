@@ -1,26 +1,58 @@
 {
-    "items": ["all", "reception tables", "kitchen units", "partition units", "fall ceiling", "furniture works", "texture/wallpaper"],
+    "items": ["all", "tv unit", "false ceiling design", "bedroom wardrobe", "modular kitchen", "dining partition", "pooja room","restroom variety box","texture/wallpaper"],
     "datas": [
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item":"reception tables"
+            "image":"/images/Residential/IMG_20231211_183215282.jpg",
+            "item":"all"
         },
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item": "reception tables"
+            "image":"/images/Residential/IMG_20231221_150640607.jpg",
+            "item": "all"
         },
         {
-            "image":"/about-1.avif",
-            "location": "manhattan, ny",
-            "title": "mordern penthouse",
-            "description": "A sleek and sophisticated residential penthouse featuring contemporary design elements and stunning city views.",
-            "item":"furniture works"
+            "image":"/images/Residential/IMG_20250129_174051.jpg",
+            "item":"all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250307_213106.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250307_213122.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250307_213229.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250307_213349.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250308_231654.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250308_232004.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG_20250308_232455.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG-20240927-WA0008.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG-20240927-WA0017.jpg",
+            "item": "all"
+        },
+        {
+            "image":"/images/Residential/IMG-20240927-WA0026.jpg",
+            "item": "all"
         }
+
     ]
 }

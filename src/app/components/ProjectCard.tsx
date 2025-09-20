@@ -14,7 +14,9 @@ const ProjectCard : React.FC<CardProps> = ({image, title, description, location,
     return(
         <div className="w-full shadow-lg bg-white rounded-b-lg">
             <div className="relative cursor-pointer">
-                <img src={image} alt="" className="rounded-lg w-full h-full object-fill" />
+                <div className="relative w-auto h-[20rem] ">
+                    <img src={image} alt="" className="rounded-lg w-full h-full object-fill" />
+                </div>
                 <div className="opacity-0 duration-200 hover:opacity-100 absolute top-0 w-full h-full bg-gradient-to-t from-black to-transparent rounded-lg flex justify-start items-end">
                     <div className="">
                         <div className="p-[1rem]">

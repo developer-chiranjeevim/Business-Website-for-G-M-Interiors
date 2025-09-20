@@ -2,33 +2,57 @@
     "datas": [
         {
             "image": "about-1.avif",
-            "date": "February 2022",
-            "title": "mordern penthouse",
-            "context": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "date": "Jan 2023",
+            "title": "Residential building",
+            "context": "Sulur(cbe)"
         },
         {
             "image": "about-1.avif",
-            "date": "February 2022",
-            "title": "mordern penthouse",
-            "context": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "date": "June 2023",
+            "title": "Commercial Building",
+            "context": "Lakshmi mill(cbe)"
         },
         {
             "image": "about-1.avif",
-            "date": "February 2022",
-            "title": "mordern penthouse",
-            "context": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "date": "December 2023",
+            "title": "Residential building",
+            "context": "Kalapatti(cbe)"
         },
         {
             "image": "about-1.avif",
-            "date": "February 2022",
-            "title": "mordern penthouse",
-            "context": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "date": "February 2024",
+            "title": "Residential building",
+            "context": "Casa Grand Kalapatti Villa(Cbe)"
         },
         {
             "image": "about-1.avif",
-            "date": "February 2022",
-            "title": "mordern penthouse",
-            "context": "A sleek and sophisticated penthouse featuring contemporary design elements and stunning city views."
+            "date": "April 2024",
+            "title": "Commercial Building",
+            "context": "Udhaya Krishna Ghee Company (Pollachi)"
+        },
+        {
+            "image": "about-1.avif",
+            "date": "October 2024",
+            "title": "Residential building",
+            "context": "Sulur"
+        },
+        {
+            "image": "about-1.avif",
+            "date": "Jan 2025",
+            "title": "Residential building",
+            "context": "Casa Grand Kalapatti Villa(Cbe)"
+        },
+        {
+            "image": "about-1.avif",
+            "date": "April 2025",
+            "title": "Residential building",
+            "context": "PN Pudur (Cbe)"
+        },
+        {
+            "image": "about-1.avif",
+            "date": "August 2025",
+            "title": "Residential building",
+            "context": "Shoba Elan Apartment (Ganapathy,Cbe)"
         }
     ]
 }

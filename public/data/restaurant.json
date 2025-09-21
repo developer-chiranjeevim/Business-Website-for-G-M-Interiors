@@ -2,19 +2,19 @@
     "items": ["all", "false ceiling", "reception/tables", "kitchen units", "partition units","furniture works","texture/wallpaper"],
     "datas": [
         {
-            "image":"/images/Restaurant/Res_1.jpg",
+            "image":"/images/restaurant/Res_1.jpg",
             "item":"all"
         },
         {
-            "image":"/images/Restaurant/IMG-20240919-WA0026.jpg",
+            "image":"/images/restaurant/IMG-20240919-WA0026.jpg",
             "item": "all"
         },
         {
-            "image":"/images/Restaurant/IMG-20240919-WA0027.jpg",
+            "image":"/images/restaurant/IMG-20240919-WA0027.jpg",
             "item":"all"
         },
         {
-            "image":"/images/Restaurant/IMG-20240919-WA0028.jpg",
+            "image":"/images/restaurant/IMG-20240919-WA0028.jpg",
             "item": "all"
         }
     ]

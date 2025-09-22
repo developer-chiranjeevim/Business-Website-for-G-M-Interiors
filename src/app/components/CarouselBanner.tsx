@@ -91,7 +91,7 @@ const CarouselBanner = () => {
                     <SwiperSlide>
                         { 
                             SwiperOverLap({
-                                image:"/images/Restaurant/Res_1.jpg",
+                                image:"/images/restaurant/res_1.jpg",
                                 subTitle: "Luxury Interior Design",
                                 title: "Elevate Your Space with Timeless Design",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",

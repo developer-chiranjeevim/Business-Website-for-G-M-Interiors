@@ -17,7 +17,7 @@ interface SwiperOverlapIF {
 
 const SwiperOverLap = (params: SwiperOverlapIF) => {
     return(
-        <div className="relative">
+        <div className="relative h-[50vh] lg:h-[100vh]">
             <img src={params.image} alt="swiper image" className="w-full h-full lg:h-[100vh] object-cover" />
             <div className="absolute top-0 z-10 w-full h-full bg-black opacity-75"></div>
                 <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center px-[2rem] lg:px-[15rem]">

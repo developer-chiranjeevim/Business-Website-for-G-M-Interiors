@@ -120,9 +120,9 @@ const Contact : React.FC = () => {
                                 </div>
                                 <div className="">
                                     <h1 className="font-semibold capitalize">Visit Our Studio</h1>
-                                    <p className="text-gray-600">123 Design Street, New York, NY 10001</p>
+                                    <p className="text-gray-600">35/9, Betaspace, Desabandhu Street, Ram Nagar, Coimbatore - 641009</p>
                                     <div className="mt-[0.5rem]">
-                                        <a href="/" className="capitalize inline-flex items-center gap-1">
+                                        <a href="https://www.google.com/maps?q=35/9,Betaspace,Desabandhu+Street,Ram+Nagar,Coimbatore-641009" target="_blank" className="capitalize inline-flex items-center gap-1">
                                             <p className="text-[0.875rem] font-semibold">get directions</p>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -140,9 +140,9 @@ const Contact : React.FC = () => {
                                 </div>
                                 <div className="">
                                     <h1 className="font-semibold capitalize">call us</h1>
-                                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                                    <p className="text-gray-600">+91 94872 88218</p>
                                     <div className="mt-[0.5rem]">
-                                        <a href="/" className="capitalize inline-flex items-center gap-1">
+                                        <a href="tel:+919487288218" className="capitalize inline-flex items-center gap-1">
                                             <p className="text-[0.875rem] font-semibold">call now</p>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -160,9 +160,9 @@ const Contact : React.FC = () => {
                                 </div>
                                 <div className="">
                                     <h1 className="font-semibold capitalize">email us</h1>
-                                    <p className="text-gray-600">sample@gmail.com</p>
+                                    <p className="text-gray-600">gminteriors474@gmail.com</p>
                                     <div className="mt-[0.5rem]">
-                                        <a href="/" className="capitalize inline-flex items-center gap-1">
+                                        <a href="mailto:gminteriors474@gmail.com" className="capitalize inline-flex items-center gap-1">
                                             <p className="text-[0.875rem] font-semibold">send email</p>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />

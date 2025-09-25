@@ -31,9 +31,9 @@ const TimeLineCard : React.FC<timelineIf> = ({ image, date, title, context }) =>
                 </svg>
             </div>
             <div className="ml-[1rem] bg-gray-100 p-[0.5rem] rounded-lg">
-                <div className="relative w-full">
+                {/* <div className="relative w-full">
                     <img src={image} alt="timeline card image" className="w-full h-full object-cover rounded-lg" />
-                </div>
+                </div> */}
                 <div className="mt-[1rem]">
                     <time className=" capitalize mb-1 text-sm font-normal leading-none text-gray-500">
                        {date}

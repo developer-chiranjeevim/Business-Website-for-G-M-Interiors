@@ -80,12 +80,12 @@ const About : React.FC = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="col-span-1">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/about-1.avif" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/commercial/IMG_20230821_132358268.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
                             <div className="col-span-1 mt-[2rem]">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/about-2.avif" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/residential/IMG-20240927-WA0026.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
 
@@ -93,12 +93,12 @@ const About : React.FC = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="col-span-1">
                                 <div className="relative w-full h-[15rem]">
-                                    <img src="/about-3.avif" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/residential/IMG_20250307_213106.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
                             <div className="col-span-1 mt-[2rem]">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/about-4.avif" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/restaurant/IMG-20240919-WA0026.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
 

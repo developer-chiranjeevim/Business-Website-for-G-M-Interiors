@@ -10,9 +10,45 @@ interface cardDatasIF{
     title: string,
     description: string,
     item: string,
-}
+};
+
+
+interface PortfolioCard{
+    image: string,
+    title: string,
+    content: string,
+    date: string,
+};
+
 
 const Portfolio : React.FC = () => {
+
+    const [portfolioData, setPortfolioData] = useState<PortfolioCard[]>([
+        {
+            image: "/images/commercial/commercial_1.jpg", 
+            title: "lorem ipsum",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            date: "20.7.2025"
+        },
+        {
+            image: "/images/commercial/commercial_1.jpg", 
+            title: "lorem ipsum",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            date: "20.7.2025"
+        },
+        {
+            image: "/images/commercial/commercial_1.jpg", 
+            title: "lorem ipsum",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            date: "20.7.2025"
+        },
+        {
+            image: "/images/commercial/commercial_1.jpg", 
+            title: "lorem ipsum",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            date: "20.7.2025"
+        },
+    ]);
 
     const [optionActive, setOptionActive] = useState<string>("commercial");
     const [cardDatas, setCardDatas] = useState<cardDatasIF[]>([]);
@@ -77,6 +113,33 @@ const Portfolio : React.FC = () => {
         // console.log(optionActive);
     };
 
+
+    const PortfolioProjectCard = (key: number, params: PortfolioCard) => {
+
+        return(
+            <div key={key} className="w-full">
+                <div className="flex justify-center">
+                    {/* project heading container */}
+                    <div className="bg-gray-200 w-12 h-12 flex items-center justify-center rounded-full">
+                        <h1 className="text-[1.5rem] font-semibold">{key + 1}</h1>
+                    </div>
+                </div>
+                <div className={`grid grid-cols-2 md:my-[2rem] ${key % 2 != 0? "[direction:rtl]" : ""}`}>
+                    <div className={`col-span-2 md:col-span-1 w-full h-[30rem] p-[2rem] ${key % 2 != 0? "md:border-l-[2px]" : "md:border-r-[2px]"}  border-gray-400 border-dotted`}>
+                        <img src={params.image} alt="portfolio card image" className="w-full h-full object-cover rounded-md" />
+                    </div>
+                    <div className="col-span-2 md:col-span-1 w-full h-fit md:h-[30rem] p-[2rem] md:flex justify-center items-center">
+                        <div className={`${key % 2 != 0? "text-end" : "text-start" }`}>
+                            <h1 className="capitalize text-[1.5rem] font-semibold">{params.title}</h1>
+                            <p className="mt-[1rem] text-gray-600 leading-[2rem]">{params.content}</p>
+                            <h1 className="mt-[1rem] text-gray-600"><span className="font-semibold text-black">Date:</span> {params.date}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
     
 
 
@@ -90,22 +153,24 @@ const Portfolio : React.FC = () => {
                             <h1 className="capitalize text-[0.75rem] text-gray-800">Our Work</h1>
                         </div>
                         <div className="text-center">
-                            <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Portfolio</h1>
+                            <h1 className="text-5xl leading-[4rem] font-semibold capitalize">Our Portfolio in Chronological Order</h1>
                             <p className="text-center text-gray-600 leading-[1.75rem] mt-[0.75rem]">Explore our collection of interior design projects across residential, commercial, and <br></br>restaurant spaces.</p>
                         </div>
+                    </div>
+                    {/* <div className="flex flex-col items-center my-[1rem]">
                         <div className="my-[1rem]">
                             <ul className="inline-flex items-center justify-center gap-[1rem] flex-wrap">
-                                {/* <li className="capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer">all</li> */}
-                                {/* <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">residential</li> */}
+                                <li className="capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer">all</li>
+                                <li className="capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]">residential</li>
                                 <li onClick={(event) => toggleOption("commercial")} className={(optionActive == "commercial"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>commercial</li>
                                 <li onClick={(event) => toggleOption("restaurant")} className={(optionActive == "restaurant"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>restaurant</li>
                                 <li onClick={(event) => toggleOption("residential")} className={(optionActive == "residential"?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>residential</li>
                             </ul>
                         </div>
                         <div className="my-[1rem]">
-                            {/* portfolio select submenu container */}
+                            portfolio select submenu container
                             <ul className="inline-flex items-center justify-center gap-[1rem] flex-wrap">
-                                {/* <li className="capitalize border-[1px] border-gray-400 px-[1rem] py-[0.5rem] rounded-full">all</li> */}
+                                <li className="capitalize border-[1px] border-gray-400 px-[1rem] py-[0.5rem] rounded-full">all</li>
                                 {
                                     items.map((item, key) => (
                                         <li onClick={(event) => handleItemChange(item)} key={key} className={(currentItem == item?"capitalize bg-black text-white px-[1rem] py-[0.5rem] rounded-full cursor-pointer":"capitalize border-[1px] border-gray-400 rounded-full cursor-pointer px-[1rem] py-[0.5rem]")}>{item}</li>
@@ -113,25 +178,17 @@ const Portfolio : React.FC = () => {
                                 }                               
                             </ul>
                         </div>
+                    </div> */}
+                    <div className="my-[2rem]">
+                        {/* Chronological order portfolio master container */}
+                        <div className="">
+                            {
+                                portfolioData.map((data, key) => 
+                                    PortfolioProjectCard(key, data)
+                                )
+                            }
+                        </div>
                     </div>
-                    {/* projects master container */}
-                    <div className="my-[1rem] grid grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-[1rem]">
-                       
-                        {
-                            currentCards.map((card, key) => (
-                               <div key={key} className="col-span-2 md:col-span-1 lg:col-span-1">
-                                    <ProjectCard image={card.image} title={card.title} description={card.description} location={card.location} type={optionActive} />
-                                </div>
-                            ))
-                        }
-                    </div>
-                    <div className="w-full flex justify-center">
-                        <button className="w-full font-semibold lg:w-fit cursor-pointer bg-white border-[1px] border-gray-600 px-[0.75rem] py-[0.5rem] text-[0.75rem] text-gray-800 rounded-lg capitalize flex items-center justify-center gap-[0.25rem]">
-                            view all projects
-                        </button>
-                    </div>
-                   
-                    
                 </div>
             </div>
         </>

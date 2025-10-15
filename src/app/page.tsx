@@ -21,7 +21,7 @@ function Home(){
         <About />
         <Portfolio />
         <Services />
-        <TimelineSec />
+        {/* <TimelineSec /> */}
         <Reviews />
         <Contact />
         <Footer />

@@ -1,8 +1,4 @@
 
-
-
-
-
 const About : React.FC = () => {
 
 

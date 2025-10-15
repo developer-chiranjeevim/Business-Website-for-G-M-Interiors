@@ -31,19 +31,19 @@ const Portfolio : React.FC = () => {
             date: "20.7.2025"
         },
         {
-            image: "/images/commercial/commercial_1.jpg", 
+            image: "/images/commercial/commercial_2.jpg", 
             title: "lorem ipsum",
             content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             date: "20.7.2025"
         },
         {
-            image: "/images/commercial/commercial_1.jpg", 
+            image: "/images/commercial/commercial_3.jpg", 
             title: "lorem ipsum",
             content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             date: "20.7.2025"
         },
         {
-            image: "/images/commercial/commercial_1.jpg", 
+            image: "/images/commercial/commercial_4.jpg", 
             title: "lorem ipsum",
             content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
             date: "20.7.2025"

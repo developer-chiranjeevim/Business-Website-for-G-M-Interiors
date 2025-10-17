@@ -70,7 +70,7 @@ const Navbar : React.FC = () => {
 
                         {/* call to action button */}
                         <div className="col-span-3 lg:col-span-1 flex justify-end items-center">
-                            <button className="hidden lg:block capitalize cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[0.75rem] text-white rounded-lg">get quote</button>
+                            <button onClick={() => scrollToSection("contact") } className="hidden lg:block capitalize cursor-pointer bg-black px-[0.75rem] py-[0.5rem] text-[0.75rem] text-white rounded-lg">get quote</button>
                             
                             <svg onClick={() => {setIsTopBarActive(!isTopBarActive)}} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 lg:hidden">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

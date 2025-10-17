@@ -60,7 +60,7 @@ const Footer : React.FC = () => {
                     </div>
 
                     <div className="col-span-3 lg:col-span-1">
-                        <div className="">
+                        {/* <div className="">
                             <h1 className="capitalize text-white text-[1.25rem] font-semibold">quick links</h1>
                         </div>
                         <div className="">
@@ -85,7 +85,7 @@ const Footer : React.FC = () => {
                                     Contact
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="col-span-3 lg:col-span-1">

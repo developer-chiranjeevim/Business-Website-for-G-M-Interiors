@@ -26,27 +26,27 @@ const Portfolio : React.FC = () => {
     const [portfolioData, setPortfolioData] = useState<PortfolioCard[]>([
         {
             image: "/images/commercial/commercial_1.jpg", 
-            title: "lorem ipsum",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            date: "20.7.2025"
+            title: "Residential Building (Sulur, Coimbatore)",
+            content: "Completed a stunning residential interior design project in Sulur, Coimbatore, featuring a perfect mix of modern aesthetics and functional comfort. Each space was customized to reflect the homeowner’s lifestyle, creating a warm and elegant living experience.",
+            date: "January 2023 "
         },
         {
             image: "/images/commercial/commercial_2.jpg", 
-            title: "lorem ipsum",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            date: "20.7.2025"
+            title: "Commercial Building (Udhaya Krishna Ghee Company, Pollachi)",
+            content: "Delivered a professional commercial interior design for Udhaya Krishna Ghee Company in Pollachi, aligning aesthetics with brand identity. The modern workspace design enhanced productivity while showcasing the company’s legacy and premium image.",
+            date: "April 2024"
         },
         {
             image: "/images/commercial/commercial_3.jpg", 
-            title: "lorem ipsum",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            date: "20.7.2025"
+            title: "Residential Building (Casa Grand Villa, Kalapatti, Coimbatore)",
+            content: "Designed a luxury villa interior at Casa Grand, Kalapatti, blending contemporary style with elegant finishes. The project focused on open layouts, natural lighting, and seamless functionality for a refined living experience in Coimbatore.",
+            date: " January 2025"
         },
         {
             image: "/images/commercial/commercial_4.jpg", 
-            title: "lorem ipsum",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-            date: "20.7.2025"
+            title: "Residential Building (Shoba Elan Apartment, Ganapathy, Coimbatore)",
+            content: "Transformed a Shoba Elan Apartment in Ganapathy with modern residential interiors tailored for urban living. Smart space planning, premium materials, and ambient lighting made it a stylish and comfortable home in Coimbatore.",
+            date: "August 2025"
         },
     ]);
 

@@ -59,7 +59,7 @@ const Services : React.FC  = () => {
                         ))
                     }
                 </div>
-                <div className="">
+                {/* <div className="">
                     <div className="bg-white text-center py-[2rem] px-[1rem] border-[1px] border-gray-300 rounded-lg">  
                         <h1 className="capitalize text-2xl font-semibold">ready to transform your space?</h1>
                         <p className="text-gray-600 capitalize mt-[1rem]">Let's discuss your project and create a design solution that exceeds your <br></br>expectations.</p>
@@ -72,7 +72,7 @@ const Services : React.FC  = () => {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         </>

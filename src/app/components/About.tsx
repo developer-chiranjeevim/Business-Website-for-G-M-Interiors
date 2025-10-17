@@ -19,7 +19,7 @@ const About : React.FC = () => {
                             We are passionate interior designers dedicated to transforming ordinary spaces into extraordinary environments. Our approach combines creativity, functionality, and attention to detail to deliver spaces that truly reflect our clients' vision.
                         </p>
                         <p className="mt-[1rem] leading-[1.75rem] text-justify text-gray-600">
-                            With over 15 years of experience in residential and commercial interior design, we have developed a reputation for excellence and innovation. Our team works closely with clients to understand their needs, preferences, and lifestyle to create personalized design solutions.
+                            With over 7 years of experience in residential and commercial interior design, we have developed a reputation for excellence and innovation. Our team works closely with clients to understand their needs, preferences, and lifestyle to create personalized design solutions.
                         </p>
                     </div>
                     {/* features master container */}
@@ -76,12 +76,12 @@ const About : React.FC = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="col-span-1">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/images/commercial/IMG_20230821_132358268.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/about/about-1.jpeg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
                             <div className="col-span-1 mt-[2rem]">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/images/residential/IMG-20240927-WA0026.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/about/about-2.jpeg" alt="about second image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
 
@@ -89,12 +89,12 @@ const About : React.FC = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="col-span-1">
                                 <div className="relative w-full h-[15rem]">
-                                    <img src="/images/residential/IMG_20250307_213106.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/residential/IMG_20250307_213106.jpg" alt="about third image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
                             <div className="col-span-1 mt-[2rem]">
                                 <div className="relative w-full h-[16rem]">
-                                    <img src="/images/restaurant/IMG-20240919-WA0026.jpg" alt="about first image" className="w-full h-full object-cover rounded-lg" />
+                                    <img src="/images/restaurant/IMG-20240919-WA0026.jpg" alt="about fourth image" className="w-full h-full object-cover rounded-lg" />
                                 </div>
                             </div>
 

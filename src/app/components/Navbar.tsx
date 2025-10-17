@@ -79,6 +79,7 @@ const Navbar : React.FC = () => {
                     </div>
                 </div>
             </div>
+            <div className="w-full h-[83px]"></div>
             <div className="block lg:hidden h-[85px]"></div>
             <div className={`fixed z-20 w-full min-h-[45vh] bg-white ${isTopBarActive?"top-[82px]" : "-top-[100vh]"} duration-400 border-b-[2px] border-gray-300 lg:hidden`}>
                 {/* topbar menu items container */}

@@ -31,7 +31,7 @@ const Portfolio : React.FC = () => {
             date: "January 2023 "
         },
         {
-            image: "/images/commercial/commercial_2.jpg", 
+            image: "/images/commercial/IMG_20230821_132358268.jpg", 
             title: "Commercial Building (Udhaya Krishna Ghee Company, Pollachi)",
             content: "Delivered a professional commercial interior design for Udhaya Krishna Ghee Company in Pollachi, aligning aesthetics with brand identity. The modern workspace design enhanced productivity while showcasing the company’s legacy and premium image.",
             date: "April 2024"
@@ -43,7 +43,7 @@ const Portfolio : React.FC = () => {
             date: " January 2025"
         },
         {
-            image: "/images/commercial/commercial_4.jpg", 
+            image: "/images/residential/IMG-20240927-WA0008.jpg", 
             title: "Residential Building (Shoba Elan Apartment, Ganapathy, Coimbatore)",
             content: "Transformed a Shoba Elan Apartment in Ganapathy with modern residential interiors tailored for urban living. Smart space planning, premium materials, and ambient lighting made it a stylish and comfortable home in Coimbatore.",
             date: "August 2025"

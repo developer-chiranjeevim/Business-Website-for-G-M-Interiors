@@ -22,7 +22,7 @@ function Home(){
         <Portfolio />
         <Services />
         {/* <TimelineSec /> */}
-        <Reviews />
+        {/* <Reviews /> */}
         <Contact />
         <Footer />
 

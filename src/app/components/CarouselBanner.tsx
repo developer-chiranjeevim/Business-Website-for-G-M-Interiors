@@ -12,28 +12,39 @@ interface SwiperOverlapIF {
     title: string,
     content: string,
     buttonPrimary: string,
-    buttonSecondary: string
+    buttonSecondary: string,
+    scrollSection: string,
 }
+
+ const scrollToSection = (id: string) => {
+        console.log("clicked")
+        
+
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+};
 
 const SwiperOverLap = (params: SwiperOverlapIF) => {
     return(
         <div className="relative h-[50vh] lg:h-[calc(100vh-83px)]">
             <img src={params.image} alt="swiper image" className="w-full h-full lg:h-[calc(100vh-83px)] object-cover" />
-            <div className="absolute top-0 z-10 w-full h-full bg-black opacity-75"></div>
+            <div className="absolute top-0 z-10 w-full h-full bg-black opacity-60"></div>
                 <div className="absolute top-0 z-10 w-full h-full flex items-center justify-center px-[2rem] lg:px-[15rem]">
                     <div className="w-full max-w-[1440px]">
                         <div className="w-full w-full md:w-[40rem]">
                             <h1 className="capitalize text-orange-400 font-semibold mb-[1rem] text-center md:text-start">{params.subTitle}</h1>
-                            <h1 className="text-white text-2xl md:text-3xl mb-[1rem] text-center md:text-start lg:text-4xl">
+                            <h1 className="text-white text-3xl md:text-3xl mb-[1rem] text-center md:text-start lg:text-4xl">
                                 {params.title}
                             </h1>
-                            <p className="text-white text-md md:text-lg text-center md:text-start">
+                            <p className="text-white text-md md:text-xl text-center md:text-start">
                                 {params.content}
                             </p>
                             <div className="hidden md:block my-[2rem]">
                                 {/* button container */}
                                 <div className="flex items-center gap-[1rem]">
-                                    <button className="capitalize bg-orange-400 text-white rounded-full px-[1.5rem] py-[0.5rem] cursor-pointer">{params.buttonPrimary}</button>
+                                    <button onClick={() => scrollToSection(params.scrollSection)} className="capitalize bg-orange-400 text-white rounded-full px-[1.5rem] py-[0.5rem] cursor-pointer">{params.buttonPrimary}</button>
                                     <button className="capitalize border-[1px] border-white text-white rounded-full px-[1.5rem] py-[0.5rem] cursor-pointer">{params.buttonSecondary}</button>
                                 </div>
                             </div>
@@ -68,7 +79,8 @@ const CarouselBanner = () => {
                                 title: "Modern Interiors for Contemporary Living",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
                                 buttonPrimary: "view our portfolio",
-                                buttonSecondary: "learn more"
+                                buttonSecondary: "learn more",
+                                scrollSection:"portfolio"
                             }) 
                         }
                     
@@ -79,10 +91,11 @@ const CarouselBanner = () => {
                             SwiperOverLap({
                                 image:"/images/commercial/commercial_3.jpg",
                                 subTitle: "Luxury Interior Design",
-                                title: "Modern Interiors for Contemporary Living",
-                                content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
+                                title: "Luxury Meets Modern Living",
+                                content: "Experience elegant living with our luxury interior design and build services. We create premium, customized interiors that redefine comfort and sophistication across Coimbatore and Tamil Nadu.",
                                 buttonPrimary: "start your design journey",
-                                buttonSecondary: "learn more"
+                                buttonSecondary: "learn more",
+                                scrollSection: "contact"
                             }) 
                         }
                     
@@ -96,7 +109,8 @@ const CarouselBanner = () => {
                                 title: "Elevate Your Space with Timeless Design",
                                 content: "Transform your home with our expert interior design services tailored to your unique style and needs.",
                                 buttonPrimary: "view our portfolio",
-                                buttonSecondary: "learn more"
+                                buttonSecondary: "learn more",
+                                scrollSection: "portfolio"
                             }) 
                         }
                     

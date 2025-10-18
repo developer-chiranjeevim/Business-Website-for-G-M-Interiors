@@ -94,12 +94,12 @@ const Footer : React.FC = () => {
                         </div>
                         <div className="flex items-center gap-[1rem] my-[0.75rem]">
                             <div className="cursor-pointer">
-                                <a href="" className="">
+                                <a href="https://www.facebook.com/profile.php?id=61577107840615#" target="_blank" className="">
                                     <img src="/icons/facebook-icon.svg" alt="facebook icon" className="h-8" />
                                 </a>
                             </div>
                             <div className="cursor-pointer">
-                                <a href="" className="">
+                                <a href="https://www.instagram.com/g_m_interiors?igsh=MWowamtiNnZqdzB5ZQ==" target="_blank" className="">
                                     <img src="/icons/instagram-icon.svg" alt="instagram icon" className="h-8" />
                                 </a>
                             </div>
